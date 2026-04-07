@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Unblocked Games</h1>
+        <p>Play games anytime, anywhere</p>
+    </header>
+
+    <div class="container">
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search games...">
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+            <!-- Games will be loaded here -->
+        </div>
+    </div>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="gameTitle"></h2>
+            <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
