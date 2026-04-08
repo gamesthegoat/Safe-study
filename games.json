@@ -1,124 +1,18 @@
-{
-    "games": [
-        {
-            "title": "2048",
-            "category": "Puzzle",
-            "emoji": "🔢",
-            "url": "https://gabrielecirulli.github.io/2048/"
-        },
-        {
-            "title": "Snake",
-            "category": "Classic",
-            "emoji": "🐍",
-            "url": "https://patorjk.com/games/snake/"
-        },
-        {
-            "title": "Tetris",
-            "category": "Puzzle",
-            "emoji": "🟦",
-            "url": "https://tetris.webgl.ninja/"
-        },
-        {
-            "title": "Flappy Bird",
-            "category": "Action",
-            "emoji": "🐦",
-            "url": "https://nebez.github.io/flappy-bird-game/"
-        },
-        {
-            "title": "Breakout",
-            "category": "Action",
-            "emoji": "🧱",
-            "url": "https://katsyula.github.io/breakout/"
-        },
-        {
-            "title": "Chrome Dinosaur",
-            "category": "Classic",
-            "emoji": "🦕",
-            "url": "https://chromedino.com/"
-        },
-        {
-            "title": "Minesweeper",
-            "category": "Puzzle",
-            "emoji": "💣",
-            "url": "https://minesweeper.online/"
-        },
-        {
-            "title": "Sudoku",
-            "category": "Puzzle",
-            "emoji": "🔲",
-            "url": "https://sudoku.com/"
-        },
-        {
-            "title": "Doodle Jump",
-            "category": "Action",
-            "emoji": "📱",
-            "url": "https://doodlejump.net/"
-        },
-        {
-            "title": "Tic Tac Toe",
-            "category": "Board",
-            "emoji": "⭕",
-            "url": "https://playtictactoe.org/"
-        },
-        {
-            "title": "Memory Game",
-            "category": "Puzzle",
-            "emoji": "🧠",
-            "url": "https://www.memozor.com/"
-        },
-        {
-            "title": "Wordle",
-            "category": "Puzzle",
-            "emoji": "📝",
-            "url": "https://www.nytimes.com/games/wordle/"
-        },
-        {
-            "title": "Hangman",
-            "category": "Word",
-            "emoji": "🎮",
-            "url": "https://www.hangmanwordgame.com/"
-        },
-        {
-            "title": "Stick Hero",
-            "category": "Action",
-            "emoji": "🎯",
-            "url": "https://stickhero.online/"
-        },
-        {
-            "title": "Slope",
-            "category": "Action",
-            "emoji": "⛷️",
-            "url": "https://slope-game.io/"
-        },
-        {
-            "title": "Connect Four",
-            "category": "Board",
-            "emoji": "🔴",
-            "url": "https://www.mathsisfun.com/games/connect4.html"
-        },
-        {
-            "title": "Checkers",
-            "category": "Board",
-            "emoji": "⚫",
-            "url": "https://cardgames.io/checkers/"
-        },
-        {
-            "title": "Solitaire",
-            "category": "Card",
-            "emoji": "🎰",
-            "url": "https://cardgames.io/solitaire/"
-        },
-        {
-            "title": "Blackjack",
-            "category": "Card",
-            "emoji": "🃏",
-            "url": "https://cardgames.io/blackjack/"
-        },
-        {
-            "title": "Billiards",
-            "category": "Sports",
-            "emoji": "🎱",
-            "url": "https://cardgames.io/pool/"
-        }
-    ]
-}
+fetch('games.json')
+  .then(response => response.json())
+  .then(games => {
+    const container = document.getElementById('games-container');
+    games.forEach(game => {
+      const card = document.createElement('div');
+      card.className = 'game-card';
+      card.innerHTML = `
+        <h2>${game.title}</h2>
+        <iframe class="game-frame" src="${game.iframeUrl}" title="${game.title}" allowfullscreen></iframe>
+      `;
+      container.appendChild(card);
+    });
+  })
+  .catch(err => {
+    document.getElementById('games-container').innerText = "Failed to load games.";
+    console.error("Failed to load games.json:", err);
+  });
