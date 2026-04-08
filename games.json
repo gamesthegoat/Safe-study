@@ -5,8 +5,4 @@
   { "name": "Brick Breaker", "id": "brickbreaker" },
   { "name": "Tic-Tac-Toe", "id": "tictactoe" },
   { "name": "Memory Game", "id": "memory" },
-  { "name": "Catch the Falling Object", "id": "catchfall" },
-  { "name": "Dodge Game", "id": "dodgegame" },
-  { "name": "Pac-Man", "id": "pacman" },
-  { "name": "Geometry Dash", "id": "geometrydash" }
-]
+  {
