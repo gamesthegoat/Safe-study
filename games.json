@@ -1,8 +1,1 @@
-[
-  { "name": "Flappy Bird", "id": "flappy" },
-  { "name": "Snake (Pac-Man style)", "id": "snake" },
-  { "name": "Simple Platformer", "id": "platformer" },
-  { "name": "Brick Breaker", "id": "brickbreaker" },
-  { "name": "Tic-Tac-Toe", "id": "tictactoe" },
-  { "name": "Memory Game", "id": "memory" },
-  {
+
