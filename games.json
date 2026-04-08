@@ -13,12 +13,6 @@
             "url": "https://patorjk.com/games/snake/"
         },
         {
-            "title": "Pac-Man",
-            "category": "Classic",
-            "emoji": "👾",
-            "url": "https://github.com/jamesknelson/pacman"
-        },
-        {
             "title": "Tetris",
             "category": "Puzzle",
             "emoji": "🟦",
@@ -61,28 +55,10 @@
             "url": "https://doodlejump.net/"
         },
         {
-            "title": "Geometry Dash",
-            "category": "Action",
-            "emoji": "▶️",
-            "url": "https://www.geometrydashonline.net/"
-        },
-        {
-            "title": "Space Invaders",
-            "category": "Classic",
-            "emoji": "👽",
-            "url": "https://playspaceinvaders.org/"
-        },
-        {
             "title": "Tic Tac Toe",
             "category": "Board",
             "emoji": "⭕",
             "url": "https://playtictactoe.org/"
-        },
-        {
-            "title": "Chess",
-            "category": "Board",
-            "emoji": "♟️",
-            "url": "https://www.chess.com/play/online"
         },
         {
             "title": "Memory Game",
@@ -103,52 +79,16 @@
             "url": "https://www.hangmanwordgame.com/"
         },
         {
-            "title": "Slope",
-            "category": "Action",
-            "emoji": "⛷️",
-            "url": "https://slope-game.io/"
-        },
-        {
             "title": "Stick Hero",
             "category": "Action",
             "emoji": "🎯",
             "url": "https://stickhero.online/"
         },
         {
-            "title": "Mario",
-            "category": "Platform",
-            "emoji": "🍄",
-            "url": "https://supermario-game.com/"
-        },
-        {
-            "title": "Subway Surfers",
+            "title": "Slope",
             "category": "Action",
-            "emoji": "🚇",
-            "url": "https://www.subwaysurfers.org/"
-        },
-        {
-            "title": "Dune 2000",
-            "category": "Strategy",
-            "emoji": "🏜️",
-            "url": "https://classicreload.com/Dune-2000.html"
-        },
-        {
-            "title": "Doom",
-            "category": "Action",
-            "emoji": "🔫",
-            "url": "https://classicdoom.com/play.php"
-        },
-        {
-            "title": "Atari Breakout",
-            "category": "Classic",
-            "emoji": "⚫",
-            "url": "https://atari.com/play"
-        },
-        {
-            "title": "Quiz Game",
-            "category": "Trivia",
-            "emoji": "❓",
-            "url": "https://www.sporcle.com/"
+            "emoji": "⛷️",
+            "url": "https://slope-game.io/"
         },
         {
             "title": "Connect Four",
@@ -163,22 +103,22 @@
             "url": "https://cardgames.io/checkers/"
         },
         {
-            "title": "Blackjack",
-            "category": "Card",
-            "emoji": "🃏",
-            "url": "https://cardgames.io/blackjack/"
-        },
-        {
             "title": "Solitaire",
             "category": "Card",
             "emoji": "🎰",
             "url": "https://cardgames.io/solitaire/"
         },
         {
-            "title": "Bejeweled",
-            "category": "Puzzle",
-            "emoji": "💎",
-            "url": "https://www.popcap.com/games/bejeweled"
+            "title": "Blackjack",
+            "category": "Card",
+            "emoji": "🃏",
+            "url": "https://cardgames.io/blackjack/"
+        },
+        {
+            "title": "Billiards",
+            "category": "Sports",
+            "emoji": "🎱",
+            "url": "https://cardgames.io/pool/"
         }
     ]
 }
