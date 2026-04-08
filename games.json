@@ -40,13 +40,211 @@
             "title": "Tetris",
             "category": "Puzzle",
             "emoji": "🟦",
-            "url": "https://tetris.com/games/tetris"
+            "url": "https://tetris.com/"
         },
         {
             "title": "Chess",
             "category": "Board",
             "emoji": "♟️",
             "url": "https://chess.com/play/online"
+        },
+        {
+            "title": "Super Mario",
+            "category": "Platform",
+            "emoji": "🍄",
+            "url": "https://supermario-game.com/"
+        },
+        {
+            "title": "Chrome Dinosaur",
+            "category": "Classic",
+            "emoji": "🦕",
+            "url": "https://chromedino.com/"
+        },
+        {
+            "title": "Subway Surfers",
+            "category": "Action",
+            "emoji": "🚇",
+            "url": "https://subwaysurfers.net/"
+        },
+        {
+            "title": "Breakout",
+            "category": "Action",
+            "emoji": "🧱",
+            "url": "https://playbreakout.org/"
+        },
+        {
+            "title": "Doodle Jump",
+            "category": "Action",
+            "emoji": "📱",
+            "url": "https://doodlejump.net/"
+        },
+        {
+            "title": "Slope",
+            "category": "Action",
+            "emoji": "⛷️",
+            "url": "https://slope-game.io/"
+        },
+        {
+            "title": "Space Invaders",
+            "category": "Classic",
+            "emoji": "👽",
+            "url": "https://spaceinvaders.org/"
+        },
+        {
+            "title": "Stick Hero",
+            "category": "Action",
+            "emoji": "🎯",
+            "url": "https://stickhero.online/"
+        },
+        {
+            "title": "Minesweeper",
+            "category": "Puzzle",
+            "emoji": "💣",
+            "url": "https://minesweeper.online/"
+        },
+        {
+            "title": "Sudoku",
+            "category": "Puzzle",
+            "emoji": "🔲",
+            "url": "https://sudoku.com/"
+        },
+        {
+            "title": "Wordle",
+            "category": "Puzzle",
+            "emoji": "📝",
+            "url": "https://www.nytimes.com/games/wordle/"
+        },
+        {
+            "title": "Cookie Clicker",
+            "category": "Idle",
+            "emoji": "🍪",
+            "url": "https://cookieclicker.com/"
+        },
+        {
+            "title": "Agar.io",
+            "category": "Multiplayer",
+            "emoji": "🟢",
+            "url": "https://agar.io/"
+        },
+        {
+            "title": "Slither.io",
+            "category": "Multiplayer",
+            "emoji": "🐍",
+            "url": "https://slither.io/"
+        },
+        {
+            "title": "Dune 2000",
+            "category": "Strategy",
+            "emoji": "🏜️",
+            "url": "https://dune2000online.com/"
+        },
+        {
+            "title": "Atari Breakout",
+            "category": "Classic",
+            "emoji": "⚫",
+            "url": "https://atari-breakout.com/"
+        },
+        {
+            "title": "Jump King",
+            "category": "Action",
+            "emoji": "⬆️",
+            "url": "https://jumpking.online/"
+        },
+        {
+            "title": "Threes",
+            "category": "Puzzle",
+            "emoji": "3️⃣",
+            "url": "https://play2048.co/"
+        },
+        {
+            "title": "Happy Glass",
+            "category": "Puzzle",
+            "emoji": "🥤",
+            "url": "https://happyglass.io/"
+        },
+        {
+            "title": "Fireboy and Watergirl",
+            "category": "Adventure",
+            "emoji": "🔥💧",
+            "url": "https://www.fireboy-watergirl.com/"
+        },
+        {
+            "title": "Cut the Rope",
+            "category": "Puzzle",
+            "emoji": "🧵",
+            "url": "https://cuttherope.ie/"
+        },
+        {
+            "title": "Bubble Shooter",
+            "category": "Puzzle",
+            "emoji": "🫧",
+            "url": "https://bubbleshooting.com/"
+        },
+        {
+            "title": "Ping Pong",
+            "category": "Classic",
+            "emoji": "🏓",
+            "url": "https://pingponggame.io/"
+        },
+        {
+            "title": "Racing Game",
+            "category": "Racing",
+            "emoji": "🏎️",
+            "url": "https://racinggame.online/"
+        },
+        {
+            "title": "Tower Defense",
+            "category": "Strategy",
+            "emoji": "🗼",
+            "url": "https://towerdefense.games/"
+        },
+        {
+            "title": "Stick Fight",
+            "category": "Action",
+            "emoji": "🤼",
+            "url": "https://stickfightgame.io/"
+        },
+        {
+            "title": "Krunker",
+            "category": "Shooter",
+            "emoji": "🎯",
+            "url": "https://krunker.io/"
+        },
+        {
+            "title": "Diep.io",
+            "category": "Multiplayer",
+            "emoji": "⭐",
+            "url": "https://diep.io/"
+        },
+        {
+            "title": "Checkers",
+            "category": "Board",
+            "emoji": "🏁",
+            "url": "https://checkers.org/"
+        },
+        {
+            "title": "Crossy Road",
+            "category": "Action",
+            "emoji": "🚗",
+            "url": "https://crossyroad.online/"
+        },
+        {
+            "title": "Flappy Fish",
+            "category": "Action",
+            "emoji": "🐠",
+            "url": "https://flappyfish.io/"
+        },
+        {
+            "title": "Zombie Apocalypse",
+            "category": "Action",
+            "emoji": "🧟",
+            "url": "https://zombieapocalypse.io/"
+        },
+        {
+            "title": "Typing Master",
+            "category": "Puzzle",
+            "emoji": "⌨️",
+            "url": "https://nitro-type.com/"
         }
     ]
 }
