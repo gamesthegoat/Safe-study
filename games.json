@@ -4,67 +4,37 @@
             "title": "2048",
             "category": "Puzzle",
             "emoji": "🔢",
-            "url": "https://play2048.co/"
+            "url": "https://gabrielecirulli.github.io/2048/"
         },
         {
             "title": "Snake",
             "category": "Classic",
             "emoji": "🐍",
-            "url": "https://www.classicgamesarcade.com/game/39/snake.html"
-        },
-        {
-            "title": "Tic Tac Toe",
-            "category": "Board",
-            "emoji": "⭕",
-            "url": "https://www.classicgamesarcade.com/game/9/tic-tac-toe.html"
-        },
-        {
-            "title": "Flappy Bird",
-            "category": "Action",
-            "emoji": "🐦",
-            "url": "https://www.classicgamesarcade.com/game/50/flappy-bird.html"
-        },
-        {
-            "title": "Geometry Dash",
-            "category": "Action",
-            "emoji": "▶️",
-            "url": "https://www.geometrydashonline.net/"
+            "url": "https://patorjk.com/games/snake/"
         },
         {
             "title": "Pac-Man",
             "category": "Classic",
             "emoji": "👾",
-            "url": "https://www.classicgamesarcade.com/game/12/pac-man.html"
+            "url": "https://github.com/jamesknelson/pacman"
         },
         {
             "title": "Tetris",
             "category": "Puzzle",
             "emoji": "🟦",
-            "url": "https://www.classicgamesarcade.com/game/6/tetris.html"
+            "url": "https://tetris.webgl.ninja/"
         },
         {
-            "title": "Chess",
-            "category": "Board",
-            "emoji": "♟️",
-            "url": "https://www.chess.com/play/online"
-        },
-        {
-            "title": "Minesweeper",
-            "category": "Puzzle",
-            "emoji": "💣",
-            "url": "https://www.classicgamesarcade.com/game/2/minesweeper.html"
+            "title": "Flappy Bird",
+            "category": "Action",
+            "emoji": "🐦",
+            "url": "https://nebez.github.io/flappy-bird-game/"
         },
         {
             "title": "Breakout",
             "category": "Action",
             "emoji": "🧱",
-            "url": "https://www.classicgamesarcade.com/game/7/breakout.html"
-        },
-        {
-            "title": "Doodle Jump",
-            "category": "Action",
-            "emoji": "📱",
-            "url": "https://doodlejump.net/"
+            "url": "https://katsyula.github.io/breakout/"
         },
         {
             "title": "Chrome Dinosaur",
@@ -73,10 +43,10 @@
             "url": "https://chromedino.com/"
         },
         {
-            "title": "Space Invaders",
-            "category": "Classic",
-            "emoji": "👽",
-            "url": "https://www.classicgamesarcade.com/game/34/space-invaders.html"
+            "title": "Minesweeper",
+            "category": "Puzzle",
+            "emoji": "💣",
+            "url": "https://minesweeper.online/"
         },
         {
             "title": "Sudoku",
@@ -85,10 +55,130 @@
             "url": "https://sudoku.com/"
         },
         {
+            "title": "Doodle Jump",
+            "category": "Action",
+            "emoji": "📱",
+            "url": "https://doodlejump.net/"
+        },
+        {
+            "title": "Geometry Dash",
+            "category": "Action",
+            "emoji": "▶️",
+            "url": "https://www.geometrydashonline.net/"
+        },
+        {
+            "title": "Space Invaders",
+            "category": "Classic",
+            "emoji": "👽",
+            "url": "https://playspaceinvaders.org/"
+        },
+        {
+            "title": "Tic Tac Toe",
+            "category": "Board",
+            "emoji": "⭕",
+            "url": "https://playtictactoe.org/"
+        },
+        {
+            "title": "Chess",
+            "category": "Board",
+            "emoji": "♟️",
+            "url": "https://www.chess.com/play/online"
+        },
+        {
+            "title": "Memory Game",
+            "category": "Puzzle",
+            "emoji": "🧠",
+            "url": "https://www.memozor.com/"
+        },
+        {
             "title": "Wordle",
             "category": "Puzzle",
             "emoji": "📝",
             "url": "https://www.nytimes.com/games/wordle/"
+        },
+        {
+            "title": "Hangman",
+            "category": "Word",
+            "emoji": "🎮",
+            "url": "https://www.hangmanwordgame.com/"
+        },
+        {
+            "title": "Slope",
+            "category": "Action",
+            "emoji": "⛷️",
+            "url": "https://slope-game.io/"
+        },
+        {
+            "title": "Stick Hero",
+            "category": "Action",
+            "emoji": "🎯",
+            "url": "https://stickhero.online/"
+        },
+        {
+            "title": "Mario",
+            "category": "Platform",
+            "emoji": "🍄",
+            "url": "https://supermario-game.com/"
+        },
+        {
+            "title": "Subway Surfers",
+            "category": "Action",
+            "emoji": "🚇",
+            "url": "https://www.subwaysurfers.org/"
+        },
+        {
+            "title": "Dune 2000",
+            "category": "Strategy",
+            "emoji": "🏜️",
+            "url": "https://classicreload.com/Dune-2000.html"
+        },
+        {
+            "title": "Doom",
+            "category": "Action",
+            "emoji": "🔫",
+            "url": "https://classicdoom.com/play.php"
+        },
+        {
+            "title": "Atari Breakout",
+            "category": "Classic",
+            "emoji": "⚫",
+            "url": "https://atari.com/play"
+        },
+        {
+            "title": "Quiz Game",
+            "category": "Trivia",
+            "emoji": "❓",
+            "url": "https://www.sporcle.com/"
+        },
+        {
+            "title": "Connect Four",
+            "category": "Board",
+            "emoji": "🔴",
+            "url": "https://www.mathsisfun.com/games/connect4.html"
+        },
+        {
+            "title": "Checkers",
+            "category": "Board",
+            "emoji": "⚫",
+            "url": "https://cardgames.io/checkers/"
+        },
+        {
+            "title": "Blackjack",
+            "category": "Card",
+            "emoji": "🃏",
+            "url": "https://cardgames.io/blackjack/"
+        },
+        {
+            "title": "Solitaire",
+            "category": "Card",
+            "emoji": "🎰",
+            "url": "https://cardgames.io/solitaire/"
+        },
+        {
+            "title": "Bejeweled",
+            "category": "Puzzle",
+            "emoji": "💎",
+            "url": "https://www.popcap.com/games/bejeweled"
         }
     ]
 }
