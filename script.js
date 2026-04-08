@@ -1,72 +1,61 @@
-// Load games from JSON
 let allGames = [];
 
 fetch('games.json')
-    .then(response => response.json())
-    .then(data => {
-        allGames = data.games;
-        displayGames(allGames);
-    })
-    .catch(error => console.error('Error loading games:', error));
+.then(res => res.json())
+.then(data => {
+allGames = data.games;
+loadCategories();
+displayGames(allGames);
+});
 
-// Display games
+function loadCategories() {
+const catSelect = document.getElementById('category');
+const categories = ["All", ...new Set(allGames.map(g => g.category))];
+
+categories.forEach(cat => {
+const option = document.createElement('option');
+option.value = cat;
+option.textContent = cat;
+catSelect.appendChild(option);
+});
+}
+
 function displayGames(games) {
-    const gamesGrid = document.getElementById('gamesGrid');
-    gamesGrid.innerHTML = '';
+const container = document.getElementById('games');
+container.innerHTML = "";
 
-    if (games.length === 0) {
-        gamesGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: white; padding: 40px;">No games found</p>';
-        return;
-    }
+games.forEach(game => {
+const div = document.createElement('div');
+div.className = "game";
 
-    games.forEach(game => {
-        const gameCard = document.createElement('div');
-        gameCard.className = 'game-card';
-        gameCard.innerHTML = `
-            <div class="game-card-image">${game.emoji}</div>
-            <div class="game-card-info">
-                <h3>${game.title}</h3>
-                <p>${game.category}</p>
-            </div>
-        `;
-        gameCard.addEventListener('click', () => openGame(game));
-        gamesGrid.appendChild(gameCard);
-    });
+```
+const btn = document.createElement('button');
+btn.innerText = game.emoji + " " + game.title;
+
+btn.onclick = () => {
+  window.open(game.url, "_blank");
+};
+
+div.appendChild(btn);
+container.appendChild(div);
+```
+
+});
 }
 
-// Open game in modal
-function openGame(game) {
-    const modal = document.getElementById('gameModal');
-    const gameFrame = document.getElementById('gameFrame');
-    const gameTitle = document.getElementById('gameTitle');
+document.getElementById('search').addEventListener('input', filterGames);
+document.getElementById('category').addEventListener('change', filterGames);
 
-    gameTitle.textContent = game.title;
-    gameFrame.src = game.url;
-    modal.style.display = 'block';
+function filterGames() {
+const search = document.getElementById('search').value.toLowerCase();
+const category = document.getElementById('category').value;
+
+const filtered = allGames.filter(game => {
+return (
+game.title.toLowerCase().includes(search) &&
+(category === "All" || game.category === category)
+);
+});
+
+displayGames(filtered);
 }
-
-// Close modal
-const modal = document.getElementById('gameModal');
-const closeBtn = document.querySelector('.close');
-
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    document.getElementById('gameFrame').src = '';
-});
-
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-        document.getElementById('gameFrame').src = '';
-    }
-});
-
-// Search functionality
-document.getElementById('searchInput').addEventListener('keyup', (e) => {
-    const searchTerm = e.target.value.toLowerCase();
-    const filtered = allGames.filter(game =>
-        game.title.toLowerCase().includes(searchTerm) ||
-        game.category.toLowerCase().includes(searchTerm)
-    );
-    displayGames(filtered);
-});
