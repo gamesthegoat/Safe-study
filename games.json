@@ -1,33 +1,12 @@
-{
-"games": [
-{ "title": "2048", "category": "Puzzle", "emoji": "🔢", "url": "https://2048game.com/" },
-{ "title": "Snake", "category": "Classic", "emoji": "🐍", "url": "https://playsnakegame.org/" },
-{ "title": "Pac-Man", "category": "Classic", "emoji": "👾", "url": "https://pacman.live/" },
-{ "title": "Tetris", "category": "Puzzle", "emoji": "🟦", "url": "https://tetris.com/play-tetris" },
-{ "title": "Minesweeper", "category": "Puzzle", "emoji": "💣", "url": "https://minesweeper.online/" },
-{ "title": "Sudoku", "category": "Puzzle", "emoji": "🔲", "url": "https://sudoku.com/" },
-
-```
-{ "title": "Cookie Clicker", "category": "Idle", "emoji": "🍪", "url": "https://orteil.dashnet.org/cookieclicker/" },
-{ "title": "Idle Breakout", "category": "Idle", "emoji": "🧱", "url": "https://idlebreakout.com/" },
-
-{ "title": "Agar.io", "category": "Multiplayer", "emoji": "🟢", "url": "https://agar.io/" },
-{ "title": "Slither.io", "category": "Multiplayer", "emoji": "🐍", "url": "https://slither.io/" },
-{ "title": "Paper.io 2", "category": "Multiplayer", "emoji": "🧻", "url": "https://paper-io.com/" },
-
-{ "title": "Run 3", "category": "Action", "emoji": "🏃", "url": "https://run3.io/" },
-{ "title": "Slope", "category": "Action", "emoji": "⛷️", "url": "https://slope-game.io/" },
-{ "title": "Moto X3M", "category": "Racing", "emoji": "🏍️", "url": "https://motox3m.io/" },
-
-{ "title": "Drift Hunters", "category": "Racing", "emoji": "🚗", "url": "https://drifthunters2.io/" },
-
-{ "title": "Tank Trouble", "category": "Action", "emoji": "🪖", "url": "https://tanktrouble.com/" },
-{ "title": "Doodle Jump", "category": "Action", "emoji": "📱", "url": "https://doodlejump.io/" },
-
-{ "title": "Pong", "category": "Classic", "emoji": "🎮", "url": "https://ponggame.org/" },
-
-{ "title": "Super Mario (Browser)", "category": "Platform", "emoji": "🍄", "url": "https://supermario-game.com/" }
-```
-
+[
+  { "name": "Flappy Bird", "id": "flappy" },
+  { "name": "Snake (Pac-Man style)", "id": "snake" },
+  { "name": "Simple Platformer", "id": "platformer" },
+  { "name": "Brick Breaker", "id": "brickbreaker" },
+  { "name": "Tic-Tac-Toe", "id": "tictactoe" },
+  { "name": "Memory Game", "id": "memory" },
+  { "name": "Catch the Falling Object", "id": "catchfall" },
+  { "name": "Dodge Game", "id": "dodgegame" },
+  { "name": "Pac-Man", "id": "pacman" },
+  { "name": "Geometry Dash", "id": "geometrydash" }
 ]
-}
