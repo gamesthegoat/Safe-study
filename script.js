@@ -1,34 +1,72 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
-  text-align: center;
+// Load games from JSON
+let allGames = [];
+
+fetch('games.json')
+    .then(response => response.json())
+    .then(data => {
+        allGames = data.games;
+        displayGames(allGames);
+    })
+    .catch(error => console.error('Error loading games:', error));
+
+// Display games
+function displayGames(games) {
+    const gamesGrid = document.getElementById('gamesGrid');
+    gamesGrid.innerHTML = '';
+
+    if (games.length === 0) {
+        gamesGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: white; padding: 40px;">No games found</p>';
+        return;
+    }
+
+    games.forEach(game => {
+        const gameCard = document.createElement('div');
+        gameCard.className = 'game-card';
+        gameCard.innerHTML = `
+            <div class="game-card-image">${game.emoji}</div>
+            <div class="game-card-info">
+                <h3>${game.title}</h3>
+                <p>${game.category}</p>
+            </div>
+        `;
+        gameCard.addEventListener('click', () => openGame(game));
+        gamesGrid.appendChild(gameCard);
+    });
 }
 
-h1 {
-  margin-top: 20px;
+// Open game in modal
+function openGame(game) {
+    const modal = document.getElementById('gameModal');
+    const gameFrame = document.getElementById('gameFrame');
+    const gameTitle = document.getElementById('gameTitle');
+
+    gameTitle.textContent = game.title;
+    gameFrame.src = game.url;
+    modal.style.display = 'block';
 }
 
-#gameList {
-  margin: 20px;
-}
+// Close modal
+const modal = document.getElementById('gameModal');
+const closeBtn = document.querySelector('.close');
 
-button {
-  margin: 5px;
-  padding: 10px 20px;
-  border: none;
-  background: #00c3ff;
-  color: black;
-  cursor: pointer;
-  border-radius: 5px;
-}
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.getElementById('gameFrame').src = '';
+});
 
-button:hover {
-  background: #00a2d6;
-}
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+        document.getElementById('gameFrame').src = '';
+    }
+});
 
-canvas {
-  background: black;
-  border: 2px solid white;
-  margin-top: 10px;
-}
+// Search functionality
+document.getElementById('searchInput').addEventListener('keyup', (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    const filtered = allGames.filter(game =>
+        game.title.toLowerCase().includes(searchTerm) ||
+        game.category.toLowerCase().includes(searchTerm)
+    );
+    displayGames(filtered);
+});
